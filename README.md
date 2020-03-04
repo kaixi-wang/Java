@@ -1,8 +1,9 @@
 # Java Projects
-## raw-video-player: given a video file as input, produce a spatially & temporally resampled output
-#### Topics: video resampling, spatial and temporal aliasing effects, image aspect ratios and pixel aspect ratios
+## raw-video-player
+**Topics:** video resampling, spatial and temporal aliasing effects, image aspect ratios and pixel aspect ratios
+**Objective:** Given a video file as input, produce a spatially & temporally resampled output
 
-  ### Inputs: 
+#### Inputs: 
   - 6 parameters where:
       - 1. Name of the input video file
       - 2. floating pointing number that will be the scaling factor for width
