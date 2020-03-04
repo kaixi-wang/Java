@@ -4,16 +4,16 @@
 
   ### Inputs: 
   - 6 parameters where:
-      1. Name of the input video file
-      2. floating pointing number that will be the scaling factor for width
-      3. floating pointing number that will be the scaling factor for height
-      4. output frame rate
-      5. controls whether anti-aliasing should be turned on (0 = off, 1 = on)
-      6. controls which analyses to implement for dealing with Pixel Aspect Ratio when resizing 
-        - 0 = default implementation
-        - 1 = nonlinear mapping 
-        - 2 = seam carving ( See [http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html])
-        - 3 = temporal content aware remapping
+      - 1. Name of the input video file
+      - 2. floating pointing number that will be the scaling factor for width
+      - 3. floating pointing number that will be the scaling factor for height
+      - 4. output frame rate
+      - 5. controls whether anti-aliasing should be turned on (0 = off, 1 = on)
+      - 6. int that controls which analyses to implement for dealing with Pixel Aspect Ratio when resizing 
+          - 0 = default implementation
+          - 1 = nonlinear mapping 
+          - 2 = seam carving ( See [http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html])
+          - 3 = temporal content aware remapping
     - **Execution:**
       1. compiling java file: `javac VideoDisplay.java`
       2. `java VideoDisplay Video.rgb 0.5 0.5 10 1 0`
