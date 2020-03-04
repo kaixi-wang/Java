@@ -1,27 +1,28 @@
 # Java Projects
 ## raw-video-player
-**Topics:** video resampling, spatial and temporal aliasing effects, image aspect ratios and pixel aspect ratios
-**Objective:** Given a video file as input, produce a spatially & temporally resampled output
+- **Topics:** video resampling, spatial and temporal aliasing effects, image aspect ratios and pixel aspect ratios
+- **Objective:** Given a video file as input, produce a spatially & temporally resampled output
 
-#### Inputs: 
-  - 6 parameters where:
-      - 1. Name of the input video file
-      - 2. floating pointing number that will be the scaling factor for width
-      - 3. floating pointing number that will be the scaling factor for height
-      - 4. output frame rate
-      - 5. controls whether anti-aliasing should be turned on (0 = off, 1 = on)
-      - 6. int that controls which analyses to implement for dealing with Pixel Aspect Ratio when resizing 
-          - 0 = default implementation
-          - 1 = nonlinear mapping 
-          - 2 = seam carving ( See [http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html])
-          - 3 = temporal content aware remapping
-    - **Execution:**
-      1. compiling java file: `javac VideoDisplay.java`
-      2. `java VideoDisplay Video.rgb 0.5 0.5 10 1 0`
-    
-This should change your video file to half its size at the same frame rate but have anti aliasing turned on.
+- **Inputs:** 6 parameters where:
+    - 1. Name of the input video file
+    - 2. floating pointing number that will be the scaling factor for width
+    - 3. floating pointing number that will be the scaling factor for height
+    - 4. output frame rate
+    - 5. controls whether anti-aliasing should be turned on (0 = off, 1 = on)
+    - 6. int that controls which analyses to implement for dealing with Pixel Aspect Ratio when resizing 
+        - 0 = default implementation
+        - 1 = nonlinear mapping 
+        - 2 = seam carving ( See [http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html])
+        - 3 = temporal content aware remapping
+- **Execution:**
+    1. compiling java file: 
+      - `javac VideoDisplay.java`
+    2. run:
+      - `java VideoDisplay Video.rgb 0.5 0.5 10 1 0`
+        - This should change your video file to half its size at the same frame rate but have anti aliasing turned on.
 
-## image-compression: comparing frequency space representations
+## image-compression
+### Comparing frequency space representations
   - **Objective:** implement side by side comparison of Discrete Cosine Transform (DCT) and Discrete Wavelet Transform (DWT) algorithms for compressing raw RGB images
   - **Method:** Read an RGB file and convert the file to an 8x8 block based DCT representation (as used in the JPEG implementation) and a DWT representation (as used in the JPEG2000 implementation).
     - **Encode**
